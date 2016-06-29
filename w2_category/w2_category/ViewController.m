@@ -32,7 +32,7 @@ NSString *urlPath;
             NSLog(@"%@", result);
             
             // truncate result
-            NSRange stringRange = {0, 300};
+            NSRange stringRange = {0, MIN(result.length, 300)};
             stringRange = [result rangeOfComposedCharacterSequencesForRange:stringRange];
             NSString *shortString = [result substringWithRange:stringRange];
             

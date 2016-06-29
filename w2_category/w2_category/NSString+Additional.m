@@ -24,9 +24,9 @@
 - (NSArray *)filterHangulWord {
     NSMutableArray *resultArray = [[NSMutableArray alloc] init];
     
-    NSCharacterSet *validCharacters = [NSCharacterSet characterSetWithCharactersInString:@" +abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789:/.?"];
-    NSCharacterSet *invalidCharacters = [validCharacters invertedSet];
-    NSRange invalidRange;
+//    NSCharacterSet *validCharacters = [NSCharacterSet characterSetWithCharactersInString:@" +abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789:/.?"];
+//    NSCharacterSet *invalidCharacters = [validCharacters invertedSet];
+//    NSRange invalidRange;
     NSArray *splicedResult = [[self mutableCopy] componentsSeparatedByString:@"-"];
     
     for (NSString *target in splicedResult) {
