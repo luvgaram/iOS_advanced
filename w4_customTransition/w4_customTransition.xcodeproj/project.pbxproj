@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A83CE9CD1D2CCBC0005B778A /* FlipPresentAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = A83CE9CC1D2CCBC0005B778A /* FlipPresentAnimator.m */; };
+		A83CE9D01D2CE536005B778A /* EJAnimatorDelegator.m in Sources */ = {isa = PBXBuildFile; fileRef = A83CE9CF1D2CE536005B778A /* EJAnimatorDelegator.m */; };
 		A8AE330F1D2C91AA000AF29F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8AE330E1D2C91AA000AF29F /* main.m */; };
 		A8AE33121D2C91AA000AF29F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8AE33111D2C91AA000AF29F /* AppDelegate.m */; };
 		A8AE33151D2C91AA000AF29F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8AE33141D2C91AA000AF29F /* ViewController.m */; };
@@ -19,6 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A83CE9CB1D2CCBC0005B778A /* FlipPresentAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlipPresentAnimator.h; sourceTree = "<group>"; };
+		A83CE9CC1D2CCBC0005B778A /* FlipPresentAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlipPresentAnimator.m; sourceTree = "<group>"; };
+		A83CE9CE1D2CE536005B778A /* EJAnimatorDelegator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJAnimatorDelegator.h; sourceTree = "<group>"; };
+		A83CE9CF1D2CE536005B778A /* EJAnimatorDelegator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJAnimatorDelegator.m; sourceTree = "<group>"; };
 		A8AE330A1D2C91AA000AF29F /* w4_customTransition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = w4_customTransition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8AE330E1D2C91AA000AF29F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A8AE33101D2C91AA000AF29F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -82,6 +88,10 @@
 				A8AE33281D2C9A5E000AF29F /* TransitionAnimator.m */,
 				A8AE332A1D2C9C69000AF29F /* PopUpViewController.h */,
 				A8AE332B1D2C9C69000AF29F /* PopUpViewController.m */,
+				A83CE9CB1D2CCBC0005B778A /* FlipPresentAnimator.h */,
+				A83CE9CC1D2CCBC0005B778A /* FlipPresentAnimator.m */,
+				A83CE9CE1D2CE536005B778A /* EJAnimatorDelegator.h */,
+				A83CE9CF1D2CE536005B778A /* EJAnimatorDelegator.m */,
 			);
 			path = w4_customTransition;
 			sourceTree = "<group>";
@@ -164,6 +174,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A83CE9CD1D2CCBC0005B778A /* FlipPresentAnimator.m in Sources */,
+				A83CE9D01D2CE536005B778A /* EJAnimatorDelegator.m in Sources */,
 				A8AE33291D2C9A5E000AF29F /* TransitionAnimator.m in Sources */,
 				A8AE33261D2C9525000AF29F /* MainTableViewController.m in Sources */,
 				A8AE33151D2C91AA000AF29F /* ViewController.m in Sources */,
@@ -320,6 +332,7 @@
 				A8AE33231D2C91AA000AF29F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,6 +8,8 @@
 
 #import "MainTableViewController.h"
 #import "TransitionAnimator.h"
+#import "FlipPresentAnimator.h"
+#import "EJAnimatorDelegator.h"
 
 @interface MainTableViewController () <UIViewControllerTransitioningDelegate, UINavigationControllerDelegate>
 
@@ -17,10 +19,12 @@
 
 @implementation MainTableViewController
 
+EJAnimatorDelegator *animationDelegator;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.navigationController setDelegate:self];
+    animationDelegator = [[EJAnimatorDelegator alloc] initWithViewController:self];
     
     UITapGestureRecognizer *recognizer = [[UITapGestureRecognizer alloc] initWithTarget: self action:@selector(secondCellTapped:)];
     [_secondCell addGestureRecognizer:recognizer];
@@ -39,7 +43,6 @@
     UIViewController *nextViewController = [segue destinationViewController];
     nextViewController.transitioningDelegate = (id)self;
     nextViewController.modalPresentationStyle = UIModalPresentationCustom;
-    
 }
 
 # pragma mark - UIViewControllerTransitioningDelegate
@@ -47,12 +50,9 @@
 - (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented
                                                                   presentingController:(UIViewController *)presenting
                                                                       sourceController:(UIViewController *)source {
-    
     TransitionAnimator *animator = [TransitionAnimator new];
     animator.presenting = YES;
     animator.navigating = NO;
-    
-    NSLog(@"main present");
     
     return (id)animator;
 }
@@ -63,21 +63,8 @@
     TransitionAnimator *animator = [TransitionAnimator new];
     animator.presenting = NO;
     animator.navigating = NO;
-    
-    NSLog(@"main dismiss");
+
     return animationController;
-}
-
-# pragma mark - UINavigationControllerDelegate
-
-- (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC {
-    
-    TransitionAnimator *animator = [TransitionAnimator new];
-    animator.navigating = YES;
-    animator.presenting = (operation == UINavigationControllerOperationPush);
-    
-    NSLog(@"navigation");
-    return (id)animator;
 }
 
 @end

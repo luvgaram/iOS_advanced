@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "w4_customTransition/MainTableViewController.m"
-            timestampString = "489465974.369283"
+            timestampString = "489482015.674886"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
             landmarkName = "secondCell"
             landmarkType = "19">
             <Locations>
