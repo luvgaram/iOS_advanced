@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yec-Wt-pmN" userLabel="SplitView">
+                                <rect key="frame" x="0.0" y="244" width="600" height="24"/>
+                                <color key="backgroundColor" red="0.85490196080000003" green="0.18823529410000001" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="JDM-PN-rKw"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NYm-LK-hbv" userLabel="BottomView">
+                                <rect key="frame" x="0.0" y="266" width="600" height="334"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ipad-pro.png" translatesAutoresizingMaskIntoConstraints="NO" id="xqv-gT-gCR">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.37254901959999998" green="0.68627450980000004" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="xqv-gT-gCR" firstAttribute="width" secondItem="NYm-LK-hbv" secondAttribute="width" priority="999" id="9kN-1D-rLK"/>
+                                    <constraint firstItem="xqv-gT-gCR" firstAttribute="centerY" secondItem="NYm-LK-hbv" secondAttribute="centerY" priority="999" id="9yd-20-J0c"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="XYT-A0-xh5"/>
+                                    <constraint firstAttribute="width" secondItem="NYm-LK-hbv" secondAttribute="height" multiplier="300:167" priority="750" id="nn6-3s-inm"/>
+                                    <constraint firstItem="xqv-gT-gCR" firstAttribute="centerX" secondItem="NYm-LK-hbv" secondAttribute="centerX" priority="999" id="qkI-Oz-384"/>
+                                    <constraint firstItem="xqv-gT-gCR" firstAttribute="height" secondItem="NYm-LK-hbv" secondAttribute="height" priority="999" id="veB-Kj-fub"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="xqv-gT-gCR"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <exclude reference="9kN-1D-rLK"/>
+                                        <exclude reference="9yd-20-J0c"/>
+                                        <exclude reference="qkI-Oz-384"/>
+                                        <exclude reference="veB-Kj-fub"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="subviews">
+                                        <include reference="xqv-gT-gCR"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <include reference="9kN-1D-rLK"/>
+                                        <include reference="9yd-20-J0c"/>
+                                        <include reference="qkI-Oz-384"/>
+                                        <include reference="veB-Kj-fub"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ZK-wL-Dl3" userLabel="TopView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="244"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="1Kb-p8-l95">
+                                        <rect key="frame" x="8" y="10" width="580" height="224"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" preservesSuperviewLayoutMargins="YES" image="watch.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Gz0-MZ-zYk">
+                                                <rect key="frame" x="0.0" y="0.0" width="290" height="224"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" preservesSuperviewLayoutMargins="YES" image="iphone6s.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="hMd-m8-5mZ">
+                                                <rect key="frame" x="290" y="0.0" width="290" height="224"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.98431372549999996" green="0.76470588240000004" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="8ZK-wL-Dl3" secondAttribute="height" multiplier="150:61" priority="750" id="7Lk-Bb-OAx"/>
+                                    <constraint firstAttribute="bottom" secondItem="1Kb-p8-l95" secondAttribute="bottom" priority="999" constant="10" id="NFm-Km-7RJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="1Kb-p8-l95" secondAttribute="trailing" priority="999" constant="12" id="PAb-Bc-ULf"/>
+                                    <constraint firstItem="1Kb-p8-l95" firstAttribute="width" secondItem="8ZK-wL-Dl3" secondAttribute="width" priority="999" constant="-20" id="UNK-89-FoR"/>
+                                    <constraint firstItem="1Kb-p8-l95" firstAttribute="height" secondItem="8ZK-wL-Dl3" secondAttribute="height" priority="999" constant="-20" id="en4-1g-ohb"/>
+                                    <constraint firstItem="1Kb-p8-l95" firstAttribute="leading" secondItem="8ZK-wL-Dl3" secondAttribute="leading" priority="999" constant="8" id="luE-8v-yld"/>
+                                    <constraint firstItem="1Kb-p8-l95" firstAttribute="top" secondItem="8ZK-wL-Dl3" secondAttribute="top" priority="999" constant="10" id="vwz-nc-evd"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="x35-4w-Odl"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NYm-LK-hbv" firstAttribute="centerX" secondItem="yec-Wt-pmN" secondAttribute="centerX" priority="999" id="2WN-68-eUl"/>
+                            <constraint firstItem="yec-Wt-pmN" firstAttribute="centerX" secondItem="8ZK-wL-Dl3" secondAttribute="centerX" priority="999" id="6zj-uz-7Bi"/>
+                            <constraint firstItem="8ZK-wL-Dl3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" priority="999" constant="-20" id="Fpi-Td-WOk"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NYm-LK-hbv" secondAttribute="bottom" priority="999" id="FtX-yz-ZLq"/>
+                            <constraint firstItem="8ZK-wL-Dl3" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" priority="999" id="TBx-Od-0J8"/>
+                            <constraint firstItem="NYm-LK-hbv" firstAttribute="width" secondItem="yec-Wt-pmN" secondAttribute="width" priority="999" id="VDy-65-HWL"/>
+                            <constraint firstItem="yec-Wt-pmN" firstAttribute="top" secondItem="8ZK-wL-Dl3" secondAttribute="bottom" priority="999" id="X12-EW-3cr"/>
+                            <constraint firstItem="yec-Wt-pmN" firstAttribute="width" secondItem="8ZK-wL-Dl3" secondAttribute="width" priority="999" id="eHl-69-0Fd"/>
+                            <constraint firstItem="8ZK-wL-Dl3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" priority="999" id="lYQ-mn-pae"/>
+                            <constraint firstItem="NYm-LK-hbv" firstAttribute="top" secondItem="yec-Wt-pmN" secondAttribute="bottom" priority="999" constant="-2" id="wiW-Fp-9o3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomView" destination="NYm-LK-hbv" id="Ybz-aj-MdC"/>
+                        <outlet property="bottomViewConstraintHeight" destination="XYT-A0-xh5" id="NJE-gJ-JtU"/>
+                        <outlet property="splitView" destination="yec-Wt-pmN" id="qds-0B-dqa"/>
+                        <outlet property="topView" destination="8ZK-wL-Dl3" id="AYg-3N-B5C"/>
+                        <outlet property="topViewConstraintHeight" destination="x35-4w-Odl" id="hi4-VQ-MvE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="244.5" y="339.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ipad-pro.png" width="470" height="556"/>
+        <image name="iphone6s.jpg" width="1600" height="1200"/>
+        <image name="watch.jpg" width="1527" height="628"/>
+    </resources>
+</document>
