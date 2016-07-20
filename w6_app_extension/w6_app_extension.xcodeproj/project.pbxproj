@@ -18,6 +18,8 @@
 		A803B52B1D3F130800E83C4D /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A803B52A1D3F130800E83C4D /* TodayViewController.m */; };
 		A803B52E1D3F130800E83C4D /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A803B52C1D3F130800E83C4D /* MainInterface.storyboard */; };
 		A803B5321D3F130800E83C4D /* w6_app_extension_today.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A803B5241D3F130800E83C4D /* w6_app_extension_today.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A803B53F1D3F3AAD00E83C4D /* EJDateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A803B53E1D3F3AAD00E83C4D /* EJDateManager.m */; };
+		A803B5401D3F3AAD00E83C4D /* EJDateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A803B53E1D3F3AAD00E83C4D /* EJDateManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		A803B52F1D3F130800E83C4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A803B5371D3F141100E83C4D /* w6_app_extension_today.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = w6_app_extension_today.entitlements; sourceTree = "<group>"; };
 		A803B5381D3F167200E83C4D /* w6_app_extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = w6_app_extension.entitlements; sourceTree = "<group>"; };
+		A803B53D1D3F3AAD00E83C4D /* EJDateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJDateManager.h; sourceTree = "<group>"; };
+		A803B53E1D3F3AAD00E83C4D /* EJDateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJDateManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +124,8 @@
 				A803B5061D3F05CF00E83C4D /* Supporting Files */,
 				A803B51D1D3F079F00E83C4D /* SetupViewController.h */,
 				A803B51E1D3F079F00E83C4D /* SetupViewController.m */,
+				A803B53D1D3F3AAD00E83C4D /* EJDateManager.h */,
+				A803B53E1D3F3AAD00E83C4D /* EJDateManager.m */,
 			);
 			path = w6_app_extension;
 			sourceTree = "<group>";
@@ -267,6 +273,7 @@
 			files = (
 				A803B51F1D3F079F00E83C4D /* SetupViewController.m in Sources */,
 				A803B50E1D3F05CF00E83C4D /* ViewController.m in Sources */,
+				A803B53F1D3F3AAD00E83C4D /* EJDateManager.m in Sources */,
 				A803B50B1D3F05CF00E83C4D /* AppDelegate.m in Sources */,
 				A803B5081D3F05CF00E83C4D /* main.m in Sources */,
 			);
@@ -276,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A803B5401D3F3AAD00E83C4D /* EJDateManager.m in Sources */,
 				A803B52B1D3F130800E83C4D /* TodayViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

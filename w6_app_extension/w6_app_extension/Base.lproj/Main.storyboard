@@ -167,19 +167,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="x8D-bw-Crk">
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="x8D-bw-Crk">
                                 <rect key="frame" x="0.0" y="37" width="600" height="216"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="216" id="9xc-xI-FOK"/>
                                 </constraints>
                                 <date key="date" timeIntervalSinceReferenceDate="490670122.06842399">
                                     <!--2016-07-20 01:15:22 +0000-->
-                                </date>
-                            </datePicker>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="vFC-Ij-dB2">
-                                <rect key="frame" x="0.0" y="253" width="600" height="216"/>
-                                <date key="date" timeIntervalSinceReferenceDate="490674760.23267198">
-                                    <!--2016-07-20 02:32:40 +0000-->
                                 </date>
                             </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQf-Ad-Zwa">
@@ -196,20 +190,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="vFC-Ij-dB2" firstAttribute="top" secondItem="x8D-bw-Crk" secondAttribute="bottom" id="D8h-ah-6Jk"/>
-                            <constraint firstItem="vFC-Ij-dB2" firstAttribute="width" secondItem="iwe-2L-SfJ" secondAttribute="width" id="Ddv-sX-t0V"/>
                             <constraint firstItem="PBm-OC-D1b" firstAttribute="top" secondItem="oQf-Ad-Zwa" secondAttribute="bottom" constant="20" id="DhR-Sl-I9o"/>
                             <constraint firstItem="x8D-bw-Crk" firstAttribute="top" secondItem="qzi-o6-5mo" secondAttribute="bottom" constant="17" id="GMG-Wl-8iH"/>
-                            <constraint firstItem="vFC-Ij-dB2" firstAttribute="centerX" secondItem="iwe-2L-SfJ" secondAttribute="centerX" id="JyL-z6-0V1"/>
                             <constraint firstItem="x8D-bw-Crk" firstAttribute="centerX" secondItem="iwe-2L-SfJ" secondAttribute="centerX" id="V5o-hx-MFe"/>
                             <constraint firstItem="x8D-bw-Crk" firstAttribute="width" secondItem="iwe-2L-SfJ" secondAttribute="width" id="b1L-jj-6iw"/>
                             <constraint firstItem="oQf-Ad-Zwa" firstAttribute="centerX" secondItem="iwe-2L-SfJ" secondAttribute="centerX" id="dM1-EX-9zY"/>
-                            <constraint firstItem="x8D-bw-Crk" firstAttribute="leading" secondItem="iwe-2L-SfJ" secondAttribute="leadingMargin" constant="-20" id="wMO-qd-VV9"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="datePicker" destination="x8D-bw-Crk" id="8Tt-9e-xgo"/>
-                        <outlet property="timePicker" destination="vFC-Ij-dB2" id="Nu6-0A-L5S"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qjV-UP-Vud" userLabel="First Responder" sceneMemberID="firstResponder"/>

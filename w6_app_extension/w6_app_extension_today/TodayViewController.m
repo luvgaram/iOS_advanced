@@ -8,6 +8,7 @@
 
 #import "TodayViewController.h"
 #import <NotificationCenter/NotificationCenter.h>
+#import "EJDateManager.h"
 
 @interface TodayViewController () <NCWidgetProviding>
 
@@ -17,22 +18,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-}
-
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
+    EJDateManager *dateManager = [[EJDateManager alloc] init];
     
-    NSUserDefaults *myPref = [[NSUserDefaults alloc] initWithSuiteName:@"group.org.nhnnext.jayIm"];
+    NSUserDefaults *myPrefs = [[NSUserDefaults alloc] initWithSuiteName:@"group.org.nhnnext.jayIm"];
     
-    NSInteger dayCount = [myPref integerForKey:@"dayCount"];
-    NSString *timeCount = [myPref objectForKey:@"timeCount"];
-    NSString *targetDate = [myPref objectForKey:@"targetDate"];
-    NSString *targetTime = [myPref objectForKey:@"targetTime"];
+    NSDate *targetDate = [myPrefs objectForKey:@"targetDate"];
     
-    _todayDayCountLabel.text = [NSString stringWithFormat:@"%d", dayCount];
-    _todayTargetDateLabel.text = targetDate;
-    _todayTimeCountLabel.text = timeCount;
-    _todayTargetTimeLabel.text = targetTime;
+    if (targetDate) {
+        NSDateComponents *components = [dateManager componentsFrom:targetDate];
+        
+        _todayDayCountLabel.text = [dateManager countDays:components];
+        _todayTargetDateLabel.text = [dateManager dayString:targetDate];
+        _todayTimeCountLabel.text = [dateManager countTime:components];
+        _todayTargetTimeLabel.text = [dateManager timeString:targetDate];
+    }
 }
 
 - (void)didReceiveMemoryWarning {

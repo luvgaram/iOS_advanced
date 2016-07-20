@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "EJDateManager.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *dayCountLabel;
@@ -18,22 +19,28 @@
 
 @implementation ViewController
 
+EJDateManager *dateManager;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    dateManager = [[EJDateManager alloc] init];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
     NSUserDefaults *myPrefs = [[NSUserDefaults alloc] initWithSuiteName:@"group.org.nhnnext.jayIm"];
-    NSInteger dayCount = [myPrefs integerForKey:@"dayCount"];
-    NSString *timeCount = [myPrefs objectForKey:@"timeCount"];
-    NSString *targetDate = [myPrefs objectForKey:@"targetDate"];
-    NSString *targetTime = [myPrefs objectForKey:@"targetTime"];
-    _dayCountLabel.text = [NSString stringWithFormat:@"%d", dayCount];
-    _timeCountLabel.text = timeCount;
-    _targetDayLabel.text = targetDate;
-    _targetTimeLabel.text = targetTime;
+    
+    NSDate *targetDate = [myPrefs objectForKey:@"targetDate"];
+    
+    if (targetDate) {
+        NSDateComponents *components = [dateManager componentsFrom:targetDate];
+
+        _dayCountLabel.text = [dateManager countDays:components];
+        _timeCountLabel.text = [dateManager countTime:components];
+        _targetDayLabel.text = [dateManager dayString:targetDate];
+        _targetTimeLabel.text = [dateManager timeString:targetDate];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
