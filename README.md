@@ -9,3 +9,4 @@
 | week 5 | 2016.7.13 12:50  | [AutoLayout](https://github.com/luvgaram/iOS_advanced/tree/master/w5_AutoLayout) |
 | week 6 | 2016.7.20 12:20  | [App Extension](https://github.com/luvgaram/iOS_advanced/tree/master/w6_app_extension) |
 | week 7 | 2016.7.27 12:00  | [Realm](https://github.com/luvgaram/iOS_advanced/tree/master/w7_Realm) |
+| week 8 | 2016.8.3 16:00  | [AVFoundation_PhotoToVideo](https://github.com/luvgaram/iOS_advanced/tree/master/w8_AVFoundation_PhotoToVideo) |

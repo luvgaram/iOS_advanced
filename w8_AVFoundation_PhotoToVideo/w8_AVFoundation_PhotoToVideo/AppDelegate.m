@@ -1,14 +1,12 @@
 //
 //  AppDelegate.m
-//  w7_Realm
+//  w8_AVFoundation_PhotoToVideo
 //
-//  Created by Eunjoo Im on 2016. 7. 27..
+//  Created by Eunjoo Im on 2016. 8. 3..
 //  Copyright © 2016년 Jay Im. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import <Realm/Realm.h>
-#import "Person.h"
 
 @interface AppDelegate ()
 
@@ -19,24 +17,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
-    // migration
-    RLMRealmConfiguration *config = [RLMRealmConfiguration defaultConfiguration];
-    config.schemaVersion = 1;
-    config.migrationBlock = ^(RLMMigration *migration, uint64_t oldSchemaVersion) {
-        // The enumerateObjects:block: method iterates
-        // over every 'Person' object stored in the Realm file
-        [migration enumerateObjects:Person.className
-                              block:^(RLMObject *oldObject, RLMObject *newObject) {
-                                  if (oldSchemaVersion < 1) {
-                                      newObject[@"isMale"] = @(YES);
-                                  }
-                              }];
-    };
-    
-    [RLMRealmConfiguration setDefaultConfiguration:config];
-    [RLMRealm defaultRealm];
-    
     return YES;
 }
 

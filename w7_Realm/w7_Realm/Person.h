@@ -10,9 +10,16 @@
 
 @interface Person : RLMObject
 
+// v0
+//@property NSInteger id;
+//@property NSString *name;
+//@property NSInteger age;
+
+// v1
 @property NSInteger id;
 @property NSString *name;
 @property NSInteger age;
+@property BOOL isMale; //new object
 
 @end
 
