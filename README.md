@@ -12,3 +12,4 @@
 | week 8 | 2016.8.3 16:00  | [AVFoundation_PhotoToVideo](https://github.com/luvgaram/iOS_advanced/tree/master/w8_AVFoundation_PhotoToVideo) |
 | week 9 | 2016.8.10 14:40  | [Keychain](https://github.com/luvgaram/iOS_advanced/tree/master/w9_Keychain) |
 | week 10 | 2016.8.17 13:00  | [GCD](https://github.com/luvgaram/iOS_advanced/tree/master/w10_GCD) |
+| week 11 | 2016.8.24 13:00  | [Multipeer Connectivity](https://github.com/luvgaram/iOS_advanced/tree/master/w11_MultipeerConnectivity) |
