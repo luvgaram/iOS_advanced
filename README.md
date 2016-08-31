@@ -13,3 +13,4 @@
 | week 9 | 2016.8.10 14:40  | [Keychain](https://github.com/luvgaram/iOS_advanced/tree/master/w9_Keychain) |
 | week 10 | 2016.8.17 13:00  | [GCD](https://github.com/luvgaram/iOS_advanced/tree/master/w10_GCD) |
 | week 11 | 2016.8.24 13:00  | [Multipeer Connectivity](https://github.com/luvgaram/iOS_advanced/tree/master/w11_MultipeerConnectivity) |
+| week 12 | 2016.8.31 12:30  | [Localization](https://github.com/luvgaram/iOS_advanced/tree/master/w12_Localization) |

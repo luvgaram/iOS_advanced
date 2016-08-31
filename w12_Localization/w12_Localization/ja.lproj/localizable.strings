@@ -1,0 +1,10 @@
+"CODE" = "test";/* 
+  localizable.strings
+  w12_Localization
+
+  Created by Eunjoo Im on 2016. 8. 31..
+  Copyright © 2016년 Jay Im. All rights reserved.
+*/
+
+"BIRTHDAY" = "1972-11-13";
+"STYLE" = "yyyy年 MM月 dd日";

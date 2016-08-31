@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "George Clooney"; ObjectID = "EJ0-QE-YXv"; */
+"EJ0-QE-YXv.text" = "George Clooney";
+
+/* Class = "UILabel"; text = "English"; ObjectID = "Ve8-J4-WHQ"; */
+"Ve8-J4-WHQ.text" = "English";
+
+/* Class = "UILabel"; text = "George Timothy Clooney (born May 6, 1961) is an American actor, filmmaker, and activist. He has received three Golden Globe Awards for his work as an actor and two Academy Awards, one for acting and the other for producing. Clooney made his acting debut on television in 1978, and later gained wide recognition in his role as Dr. Doug Ross on the long-running medical drama ER from 1994 to 1999, for which he received two Primetime Emmy Award nominations. While working on ER, he began attracting a variety of leading roles in films, including the superhero film Batman & Robin (1997) and the crime comedy Out of Sight (1998), in which he first worked with director Steven Soderbergh, who would become a long-time collaborator. In 1999, he took the lead role in Three Kings, a well-received war satire set during the Gulf War."; ObjectID = "c9U-GB-x8I"; */
+"c9U-GB-x8I.text" = "George Timothy Clooney (born May 6, 1961) is an American actor, filmmaker, and activist. He has received three Golden Globe Awards for his work as an actor and two Academy Awards, one for acting and the other for producing. Clooney made his acting debut on television in 1978, and later gained wide recognition in his role as Dr. Doug Ross on the long-running medical drama ER from 1994 to 1999, for which he received two Primetime Emmy Award nominations. While working on ER, he began attracting a variety of leading roles in films, including the superhero film Batman & Robin (1997) and the crime comedy Out of Sight (1998), in which he first worked with director Steven Soderbergh, who would become a long-time collaborator. In 1999, he took the lead role in Three Kings, a well-received war satire set during the Gulf War.";
+
+/* Class = "UIButton"; normalTitle = "Birthday"; ObjectID = "yiy-qi-5gx"; */
+"yiy-qi-5gx.normalTitle" = "Birthday";

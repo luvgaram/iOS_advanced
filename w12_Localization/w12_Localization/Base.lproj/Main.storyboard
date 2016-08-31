@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="English" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ve8-J4-WHQ">
+                                <rect key="frame" x="20" y="20" width="113" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="113" id="kAH-UY-u7h"/>
+                                    <constraint firstAttribute="height" constant="21" id="vuG-hK-aJW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="EHu-8k-DiT">
+                                <rect key="frame" x="20" y="61" width="560" height="347"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="George Clooney" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EJ0-QE-YXv">
+                                <rect key="frame" x="20" y="431" width="168" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="168" id="05I-dN-xpc"/>
+                                    <constraint firstAttribute="height" constant="21" id="uf3-r0-sgi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9U-GB-x8I">
+                                <rect key="frame" x="20" y="473" width="560" height="107"/>
+                                <mutableString key="text">George Timothy Clooney (born May 6, 1961) is an American actor, filmmaker, and activist. He has received three Golden Globe Awards for his work as an actor and two Academy Awards, one for acting and the other for producing. Clooney made his acting debut on television in 1978, and later gained wide recognition in his role as Dr. Doug Ross on the long-running medical drama ER from 1994 to 1999, for which he received two Primetime Emmy Award nominations. While working on ER, he began attracting a variety of leading roles in films, including the superhero film Batman &amp; Robin (1997) and the crime comedy Out of Sight (1998), in which he first worked with director Steven Soderbergh, who would become a long-time collaborator. In 1999, he took the lead role in Three Kings, a well-received war satire set during the Gulf War.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yiy-qi-5gx">
+                                <rect key="frame" x="440" y="428" width="140" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="2Mj-FY-QBg"/>
+                                    <constraint firstAttribute="height" constant="30" id="deW-KP-R8c"/>
+                                </constraints>
+                                <state key="normal" title="Birthday"/>
+                                <connections>
+                                    <action selector="birthdayButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aU0-kv-bqI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="c9U-GB-x8I" secondAttribute="bottom" constant="20" id="2pl-t8-8Wa"/>
+                            <constraint firstItem="c9U-GB-x8I" firstAttribute="top" secondItem="yiy-qi-5gx" secondAttribute="bottom" constant="15" id="646-yW-mMX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yiy-qi-5gx" secondAttribute="trailing" id="6Qx-5w-1tX"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="EHu-8k-DiT" secondAttribute="leading" id="7d2-tK-bDZ"/>
+                            <constraint firstItem="EJ0-QE-YXv" firstAttribute="top" secondItem="EHu-8k-DiT" secondAttribute="bottom" constant="23" id="AEn-uy-9hM"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="c9U-GB-x8I" secondAttribute="leading" id="B8D-N7-gEW"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="EJ0-QE-YXv" secondAttribute="leading" id="HgV-d0-zoB"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Ve8-J4-WHQ" secondAttribute="leading" id="Id6-ZR-vIb"/>
+                            <constraint firstItem="c9U-GB-x8I" firstAttribute="top" secondItem="EJ0-QE-YXv" secondAttribute="bottom" constant="21" id="Nis-Tj-2AN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EHu-8k-DiT" secondAttribute="bottom" constant="192" id="X84-qM-eN4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="c9U-GB-x8I" secondAttribute="trailing" id="Y1v-VL-10E"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EHu-8k-DiT" secondAttribute="trailing" id="uL3-nK-CeG"/>
+                            <constraint firstItem="Ve8-J4-WHQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="wKF-Ok-uUZ"/>
+                            <constraint firstItem="EHu-8k-DiT" firstAttribute="top" secondItem="Ve8-J4-WHQ" secondAttribute="bottom" constant="20" id="ww1-eh-Iju"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="birthdayButton" destination="yiy-qi-5gx" id="buU-SG-1zU"/>
+                        <outlet property="languageLabel" destination="Ve8-J4-WHQ" id="dl3-S1-av5"/>
+                        <outlet property="nameLabel" destination="EJ0-QE-YXv" id="Spj-7b-3V8"/>
+                        <outlet property="profileImageView" destination="EHu-8k-DiT" id="3bC-0K-vsO"/>
+                        <outlet property="profileLabel" destination="c9U-GB-x8I" id="vi5-KA-P9M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="317"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="profile.jpg" width="2063" height="3000"/>
+    </resources>
+</document>
